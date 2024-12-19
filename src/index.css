@@ -1,0 +1,57 @@
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define New Color Theme */
+:root {
+  --primary: #0077b6; /* Vibrant Blue for Buttons and Links */
+  --secondary: #023047; /* Deep Navy Blue for Headings */
+  --tertiary: #4a5568; /* Muted Gray-Blue for Text */
+  --hover: #38bdf8; /* Bright Aqua Blue for Hover Effects */
+  --background-blue: #ddf3fd; /* Soft Light Blue Background */
+  --background-off-white: #f9f9f9; /* Off-White Background for Alternating Sections */
+  --wave-1: #bae6fd; /* Sky Blue for Decorative Waves */
+  --wave-2: #7dd3fc; /* Light Aqua Blue for Decorative Waves */
+  --wave-3: #38bdf8; /* Bright Aqua Blue for Additional Waves */
+}
+
+
+body {
+  font-family: 'Mada', sans-serif;
+  margin: 0;
+  background-color: var(--background); /* Soft Light Blue Background */
+  color: var(--tertiary); /* Muted Gray-Blue Text */
+  scroll-behavior: smooth;
+}
+
+/* Optional: Reset styles for headings, buttons, and text */
+h1, h2, h3, h4, h5, h6, button, p, a, div, span {
+  font-family: 'Mada', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: var(--secondary); /* Headings in Deep Navy Blue */
+}
+
+
+
+/* Buttons */
+button {
+  background-color: var(--primary); /* Vibrant Blue Buttons */
+  color: #ffffff; /* White text on buttons */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover); /* Hover color for buttons in Bright Aqua Blue */
+}
+
+/* Scroll Snap Container */

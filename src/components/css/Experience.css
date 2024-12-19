@@ -1,0 +1,133 @@
+/* Container Styling */
+.experience-container {
+  /* font-family: "Montserrat", sans-serif; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--background-off-white);
+  width: 100%;
+}
+
+/* Title Styling */
+.experience-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.experience-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--tertiary);
+  margin-bottom: 3rem;
+}
+
+/* Experience Grid Styling */
+.experience-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 1240px) {
+  .experience-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Card Styling */
+.experience-card {
+  background: #ffffff;
+  border: 2px solid var(--primary);
+  border-radius: 0 0 36px 0;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  height: auto;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 20px rgba(56, 189, 248, 0.2);
+}
+
+/* Logo Styling */
+.experience-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* Card Content */
+.experience-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--hover);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.experience-company {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0.8rem;
+}
+
+.experience-subtitle {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-role {
+  font-size: 1.1rem;
+  color: var(--tertiary);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.experience-link {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin-top: auto;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.experience-link:hover {
+  color: var(--hover);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .experience-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
